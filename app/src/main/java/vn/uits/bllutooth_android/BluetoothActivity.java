@@ -15,9 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class MainActivity extends AppCompatActivity {
+public class BluetoothActivity extends AppCompatActivity {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = BluetoothActivity.class.getSimpleName();
 
     private ToggleButton mToggleButton;
     private BluetoothAdapter mBlueTooth;
@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mAdapter = new RecycleViewAdapter(mArrDevice);
-
         mRecycleView.setLayoutManager(mLinearLayout);
         mRecycleView.setAdapter(mAdapter);
 
